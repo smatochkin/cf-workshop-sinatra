@@ -1,7 +1,9 @@
-cf-workshop-html
+cf-workshop-sinatra-advanced
 ================
 
-Static HTML pages for the CF Workshop applications.  There are 4 pages set up:
+Sinatra application for the Cloud Foundry workshop.
+
+There are 4 pages set up:
 
  * index - Displays environment variables and ports
  * kill - Placeholder for the kill action

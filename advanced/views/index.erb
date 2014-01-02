@@ -36,6 +36,7 @@
           <p>The application port is <em><%= ENV['VCAP_APP_PORT'] %></em></p>
           <p>The instance ID is <em><%= VCAP_HASH['instance_id'] %></em></p>
           <p>The instance index is <em><%= VCAP_HASH['instance_index'] %></em></p>
+          <p>The instance started at <em><%= VCAP_HASH['started_at'] %></em></p>
           <p>Process ID <em><%= Process.pid %></em></p>
 	 </div>
         <hr/>

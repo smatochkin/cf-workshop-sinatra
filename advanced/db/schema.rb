@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 20131224155923) do
     t.string "emailAddress"
   end
 
-  create_table "sessions", force: true do |t|
-    t.integer "attendee"
+  create_table "class_sessions", force: true do |t|
+    t.integer "attendeeId"
     t.string  "name"
     t.date    "date"
     t.boolean "completed"

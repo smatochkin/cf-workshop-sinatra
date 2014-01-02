@@ -11,7 +11,7 @@ end
 class Attendee < ActiveRecord::Base
 end
 
-class Session < ActiveRecord::Base
+class ClassSession < ActiveRecord::Base
 end
 
 get '/kill' do
@@ -20,7 +20,11 @@ get '/kill' do
 end
 
 get '/sessions' do
-  @sessions = Session.order("id DESC")
+  if ( params[:attendeeId] )
+    @classSessions = ClassSession.where('attendeeId' => params[:attendeeId])
+  else
+    @classSessions = ClassSession.order("id DESC")
+  end
   erb :sessions
 end
 

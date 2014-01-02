@@ -39,11 +39,11 @@
             </tr>
           </thead>
           <tbody>
-            <% for session in @sessions %>
+            <% for classSession in @classSessions %>
             <tr>
-              <td><% session.name %></td>
-              <td><% session.date %></td>
-              <td><% session.completed %></td>
+              <td><%= classSession.name %></td>
+              <td><%= classSession.date %></td>
+              <td><%= classSession.completed %></td>
             </tr>
            <% end %>
            </tbody>

@@ -1,0 +1,15 @@
+---
+applications:
+- name: rubylab2
+  memory: 128M
+  instances: 2
+  host: rubylab2
+  domain: cfapps.io
+  path: .
+  services:
+    rubylab2db:
+      label: cleardb
+      provider: cleardb
+      version: n/a
+      plan: spark
+  command: "bundle exec rake cf:on_first_instance db:migrate db:seed && bundle exec rackup -p $PORT"

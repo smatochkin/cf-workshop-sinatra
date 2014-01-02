@@ -15,8 +15,8 @@ class ClassSession < ActiveRecord::Base
 end
 
 get '/kill' do
+  Process.kill 'TERM', Process.pid
   erb :kill
-  Sinatra::Application.quit!
 end
 
 get '/sessions' do

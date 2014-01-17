@@ -1,8 +1,8 @@
-== CF Workshop Sinatra LABS ==
+== CF Workshop Sinatra LABS
 
 (Assumption EC2 cf-workshop AMI is running and logged into)
 
-=== Module 2 ===
+=== Module 2
 
 == Lab: Sample Application -- Application Menu -> Terminal Emulator
 
@@ -46,7 +46,7 @@ cf stop testapp
 
 cf delete testapp
 
-=== Module 4 ===
+=== Module 4
 
 == Lab: Environmental Variables
 
@@ -72,7 +72,7 @@ cf push --command 'bundle exec rake --trace cf:on_first_instance db:migrate && b
 
 -- Web browser -> http:// -- Navigate to the Attendees
 
-=== Module 5 ===
+=== Module 5
 
 == Lab: Scaling
 
@@ -90,7 +90,7 @@ cf app rubylab
 
 -- Web browser -> http://
 
-=== Module 6 ===
+=== Module 6
 
 == Lab: Health Management Application
 

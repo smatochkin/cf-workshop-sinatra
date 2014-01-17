@@ -1,10 +1,10 @@
-== CF Workshop Sinatra LABS
+# CF Workshop Sinatra LABS
 
 (Assumption EC2 cf-workshop AMI is running and logged into)
 
-=== Module 2
+## Module 2
 
-== Lab: Sample Application -- Application Menu -> Terminal Emulator
+### Lab: Sample Application -- Application Menu -> Terminal Emulator
 
 git clone https://github.com/skahler-pivotal/cf-workshop-sinatra.git
 
@@ -20,7 +20,7 @@ close browser
 
 Ctrl-C to stop webserver
 
-== Lab: Application Push
+### Lab: Application Push
 
 cf target https://api.run.pivotal.io
 
@@ -34,7 +34,7 @@ cat manifest.yml
 
 -- Web browser ( http://.cfapps.io
 
-== Lab: Working with Deployed Applications
+### Lab: Working with Deployed Applications
 
 cf apps
 
@@ -46,9 +46,9 @@ cf stop testapp
 
 cf delete testapp
 
-=== Module 4
+## Module 4
 
-== Lab: Environmental Variables
+### Lab: Environmental Variables
 
 cd ~ cd cf-workshop-sinatra cd basic
 
@@ -60,7 +60,7 @@ cf stop
 
 cf delete
 
-== Lab: Services
+### Lab: Services
 
 Note the Service Lab in Sinatra cannot be pushed without a database backend and then started Instead we will
 
@@ -72,15 +72,15 @@ cf push --command 'bundle exec rake --trace cf:on_first_instance db:migrate && b
 
 -- Web browser -> http:// -- Navigate to the Attendees
 
-=== Module 5
+## Module 5
 
-== Lab: Scaling
+### Lab: Scaling
 
 cf scale --instances 3
 
 cf apps (verify app has scaled to # of instances0
 
-== Lab: URL Mapping
+### Lab: URL Mapping
 
 cf app rubylab
 
@@ -90,9 +90,9 @@ cf app rubylab
 
 -- Web browser -> http://
 
-=== Module 6
+## Module 6
 
-== Lab: Health Management Application
+### Lab: Health Management Application
 
 cf stats
 
@@ -102,7 +102,7 @@ cf stats (should show one app down)
 
 cf stats (repeat until app shows up and running)
 
-== Lab: Application Logging
+### Lab: Application Logging
 
 cf logs
 
